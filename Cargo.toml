@@ -2,6 +2,7 @@
 name = "rusty-bins"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/ahd-playgrounds/rusty-bins"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -18,3 +19,7 @@ lto = "thin"
 cargo-dist-version = "0.2.0"
 # Target platforms to build apps for (Rust target-triple syntax)
 targets = ["x86_64-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-msvc", "aarch64-apple-darwin"]
+# CI backends to support (see 'cargo dist generate-ci')
+ci = ["github"]
+# The installers to generate for each app
+installers = ["homebrew"]
